@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SolucionesSant | Ordenadores</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolucionesSant</title>
   <style>
     body{margin:0;font-family:'Segoe UI',sans-serif;background:#f3f4f6;color:#111827}
-    header{background:linear-gradient(135deg,#020617,#1e3a8a);color:#fff;padding:60px 20px;text-align:center}
-    h1{margin:0;font-size:2.8rem}
+    header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:70px 20px;text-align:center}
+    h1{font-size:3rem;margin:0}
+    p{font-size:1.1rem}
     section{max-width:1100px;margin:auto;padding:60px 20px}
-    .card{background:#fff;border-radius:20px;padding:35px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-    ul{line-height:1.8}
-    .btn{display:inline-block;margin-top:25px;padding:12px 25px;background:#1d4ed8;color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
-    footer{text-align:center;background:#020617;color:#fff;padding:25px;margin-top:60px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+    .card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s}
+    .card:hover{transform:translateY(-6px)}
+    .card h2{color:#1e3a8a}
+    .btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#1d4ed8;color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
+    footer{text-align:center;background:#0f172a;color:#fff;padding:25px;margin-top:60px}
   </style>
 </head>
 <body>
 
 <header>
   <h1>SolucionesSant</h1>
-  <p>Especialistas en ordenadores portátiles y de sobremesa</p>
+  <p>Servicios profesionales para el hogar, tecnología y contenido digital</p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Servicios de informática</h2>
-    <p>Ofrecemos soluciones profesionales para equipos informáticos, tanto domésticos como gaming.</p>
-    <ul>
-      <li>Mantenimiento preventivo y correctivo</li>
-      <li>Reparación de ordenadores portátiles</li>
-      <li>Reparación de ordenadores de sobremesa</li>
-      <li>Equipos convencionales y gaming</li>
-      <li>Limpieza interna y optimización</li>
-      <li>Actualización de hardware y software</li>
-    </ul>
+  <div class="grid">
+    <div class="card">
+      <h2>SolucionesSant</h2>
+      <p>Mantenimiento y reparación de ordenadores portátiles y de sobremesa, convencionales y gaming.</p>
+      <a href="solucionessant.html" class="btn">Ver servicios</a>
+    </div>
 
-    <a href="index.html" class="btn">⬅ Volver al inicio</a>
+    <div class="card">
+      <h2>ServGSant</h2>
+      <p>Reparaciones generales y soluciones prácticas para el hogar.</p>
+      <a href="servgsant.html" class="btn">Ver servicios</a>
+    </div>
+
+    <div class="card">
+      <h2>CContentSant</h2>
+      <p>Edición de video, imágenes, gestión de redes sociales y creación de contenido.</p>
+      <a href="ccontentsant.html" class="btn">Ver servicios</a>
+    </div>
   </div>
 </section>
 
@@ -45,5 +53,4 @@
 
 </body>
 </html>
-
 
