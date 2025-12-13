@@ -3,115 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio Profesional</title>
+  <title>SolucionesSant</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #e5e7eb;
-      color: #1f2937;
-    }
-    header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    h2 {
-      margin-top: 0;
-      font-weight: 600;
-      color: #1e3a8a;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 25px rgba(0,0,0,0.12);
-    }
-    .projects img {
-      width: 100%;
-      border-radius: 15px;
-    }
-    footer {
-      background: #0f172a;
-      color: white;
-      padding: 25px;
-      text-align: center;
-      margin-top: 40px;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #1d4ed8;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      margin-top: 10px;
-      font-weight: 600;
-      transition: background 0.2s ease;
-    }
-    a.button:hover {
-      background: #1e40af;
-    }
+    body{margin:0;font-family:'Segoe UI',sans-serif;background:#f3f4f6;color:#111827}
+    header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:70px 20px;text-align:center}
+    h1{font-size:3rem;margin:0}
+    p{font-size:1.1rem}
+    section{max-width:1100px;margin:auto;padding:60px 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+    .card{background:#fff;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s}
+    .card:hover{transform:translateY(-6px)}
+    .card h2{color:#1e3a8a}
+    .btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#1d4ed8;color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
+    footer{text-align:center;background:#0f172a;color:#fff;padding:25px;margin-top:60px}
   </style>
 </head>
 <body>
-  <header>
-    <h1>SolucionesSant</h1>
-     </header>
 
-  <section>
+<header>
+  <h1>SolucionesSant</h1>
+  <p>Servicios profesionales para el hogar, tecnología y contenido digital</p>
+</header>
+
+<section>
+  <div class="grid">
     <div class="card">
-      <h2>Sobre nosotros</h2>
-      <p>Somos una pequeña empresa por cuenta propia que ofrece servicios generales para el hogar. También brindamos servicios de edición de videos, gestión de redes sociales y mantenimiento y reparación de ordenadores portátiles y de mesa, tanto convencionales como gaming.</p>
-    </div>
-
-    <div class="card projects">
-      <h2>Trabajos recientes</h2>
-      <p>Aquí puedes colocar imágenes o capturas de tus proyectos:</p>
-      <img src="https://via.placeholder.com/900x500" alt="Proyecto ejemplo" />
+      <h2>SolucionesSant</h2>
+      <p>Mantenimiento y reparación de ordenadores portátiles y de sobremesa, convencionales y gaming.</p>
+      <a href="solucionessant.html" class="btn">Ver servicios</a>
     </div>
 
     <div class="card">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Edición de video</li>
-        <li>Gestión de redes sociales</li>
-        <li>Edición de imágenes</li>
-        <li>Reparación y mantenimiento de computadoras</li>
-      </ul>
+      <h2>ServGSant</h2>
+      <p>Reparaciones generales y soluciones prácticas para el hogar.</p>
+      <a href="servgsant.html" class="btn">Ver servicios</a>
     </div>
 
     <div class="card">
-      <h2>Contacto</h2>
-      <p>Puedes contactarme directamente aquí:</p>
-      <a href="#" class="button">Enviar mensaje</a>
+      <h2>CContentSant</h2>
+      <p>Edición de video, imágenes, gestión de redes sociales y creación de contenido.</p>
+      <a href="ccontentsant.html" class="btn">Ver servicios</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Mi Portafolio – Todos los derechos reservados</p>
-  </footer>
+<footer>
+  <p>© 2025 SolucionesSant</p>
+</footer>
+
 </body>
 </html>
+
 
