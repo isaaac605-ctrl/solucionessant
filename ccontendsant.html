@@ -1,155 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CContendSant | Contenido digital</title>
- <style>
-  body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
-    color:#e5e7eb;
-  }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CContendSant | Contenido digital</title>
 
-  header{
-    background:linear-gradient(135deg,#4f46e5,#7c3aed,#2563eb);
-    color:white;
-    padding:80px 20px;
-    text-align:center;
-    box-shadow:0 10px 40px rgba(0,0,0,.6);
-  }
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 
-  h1{
-    margin:0;
-    font-size:3rem;
-    letter-spacing:1px;
-  }
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+  color:#e5e7eb;
+}
 
-  header p{
-    font-size:1.2rem;
-    opacity:.95;
-    margin-top:15px;
-  }
+header{
+  background:linear-gradient(135deg,#4f46e5,#7c3aed,#2563eb);
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
 
-  section{
-    max-width:1100px;
-    margin:auto;
-    padding:70px 20px;
-  }
+h1{margin:0;font-size:3rem}
+h2{color:#a5b4fc}
 
-  .card{
-    background:linear-gradient(145deg,#111827,#1f2937);
-    border-radius:22px;
-    padding:40px;
-    box-shadow:
-      inset 0 0 0 rgba(255,255,255,.05),
-      0 20px 50px rgba(0,0,0,.7);
-  }
+section{max-width:1100px;margin:auto;padding:70px 20px}
 
-  h2{
-    color:#a5b4fc;
-    font-size:2rem;
-  }
+.card{
+  background:linear-gradient(145deg,#111827,#1f2937);
+  border-radius:22px;
+  padding:40px;
+  box-shadow:0 20px 50px rgba(0,0,0,.7);
+}
 
-  ul{
-    line-height:1.9;
-    font-size:1.05rem;
-  }
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 30px;
+  background:linear-gradient(135deg,#7c3aed,#4f46e5);
+  color:#fff;
+  text-decoration:none;
+  border-radius:14px;
+  font-weight:700;
+}
 
-  li::marker{
-    color:#818cf8;
-  }
-
-  .btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 30px;
-    background:linear-gradient(135deg,#7c3aed,#4f46e5);
-    color:white;
-    text-decoration:none;
-    border-radius:14px;
-    font-weight:700;
-    box-shadow:0 10px 25px rgba(79,70,229,.6);
-    transition:.25s;
-  }
-
-  .btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 35px rgba(124,58,237,.8);
-  }
-
-  footer{
-    text-align:center;
-    background:#020617;
-    color:#9ca3af;
-    padding:30px;
-    margin-top:80px;
-    font-size:.9rem;
-  }
-   /* 👇 GALERÍA DE IMÁGENES 👇 */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:25px;
-  margin-top:50px;
-  justify-items:center;
+  margin-top:40px;
 }
 
 .gallery img{
   width:100%;
+  display:block;
   border-radius:18px;
   box-shadow:0 15px 40px rgba(0,0,0,.6);
-  transition:transform .3s ease;
 }
 
-.gallery img:hover{
-  transform:scale(1.04);
+footer{
+  text-align:center;
+  background:#020617;
+  color:#9ca3af;
+  padding:30px;
+  margin-top:80px;
 }
 
+@media (max-width:768px){
+  h1{font-size:2.2rem}
+  h2{font-size:1.6rem}
+  .btn{width:100%;text-align:center}
+  .card{padding:25px 20px}
+  section{padding:40px 15px}
+}
 </style>
-
 </head>
+
 <body>
 
 <header>
-  <h1>CContendSant</h1>
-  <p>Creación de contenido y gestión digital</p>
+<h1>CContendSant</h1>
+<p>Creación de contenido digital</p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Servicios digitales</h2>
-    <p>Ayudamos a marcas y negocios a destacar en el entorno digital con contenido profesional.</p>
-   <ul>
-  <li>Edición de videos para redes sociales</li>
-  <li>Edición y diseño de imágenes</li>
-  <li>Gestión de redes sociales</li>
-  <li>Creación de contenido digital</li>
-  <li>Optimización de perfiles y branding</li>
+<div class="card">
+<h2>Servicios digitales</h2>
+<ul>
+<li>Edición de video</li>
+<li>Diseño de imágenes</li>
+<li>Gestión de redes sociales</li>
 </ul>
 
 <h2>Proceso creativo</h2>
-
 <div class="gallery">
-  <img src="https://raw.githubusercontent.com/isaaac605-ctrl/solucionessant/main/personaeditando.jpg"
-       alt="Edición de video y creación de contenido"
-       loading="lazy"
-    decoding="async">
+<img src="https://raw.githubusercontent.com/isaaac605-ctrl/solucionessant/main/personaeditando.jpg" loading="lazy" decoding="async">
 </div>
 
-
-<a href="mailto:solucionessant2025@gmail.com?subject=Consulta%20CContendSant"
-   class="btn">📧 Contactar por correo</a>
-
-    <a href="index.html" class="btn">⬅ Volver al inicio</a>
-  </div>
+<a class="btn" href="mailto:solucionessant2025@gmail.com?subject=CContendSant">📧 Contactar</a>
+<a class="btn" href="index.html">⬅ Volver</a>
+</div>
 </section>
 
-<footer>
-  <p>© 2025 CContendSant</p>
-</footer>
-
+<footer>© 2025 CContendSant</footer>
 </body>
 </html>
-
