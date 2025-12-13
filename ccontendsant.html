@@ -87,6 +87,25 @@
     margin-top:80px;
     font-size:.9rem;
   }
+   /* 👇 GALERÍA DE IMÁGENES 👇 */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,.6);
+  transition:transform .3s ease;
+}
+
+.gallery img:hover{
+  transform:scale(1.04);
+}
+
 </style>
 
 </head>
@@ -102,6 +121,14 @@
     <h2>Servicios digitales</h2>
     <p>Ayudamos a marcas y negocios a destacar en el entorno digital con contenido profesional.</p>
     <ul>
+      <h2>Proceso creativo</h2>
+
+<div class="gallery">
+  <img src="https://raw.githubusercontent.com/isaaac605-ctrl/solucionessant/main/personaeditando.jpg"
+       alt="Edición de video y creación de contenido"
+       loading="lazy">
+</div>
+
       <li>Edición de videos para redes sociales</li>
       <li>Edición y diseño de imágenes</li>
       <li>Gestión de redes sociales</li>
