@@ -13,6 +13,25 @@
     ul{line-height:1.8}
     .btn{display:inline-block;margin-top:25px;padding:12px 25px;background:#1d4ed8;color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
     footer{text-align:center;background:#020617;color:#fff;padding:25px;margin-top:60px}
+ /* 👇 GALERÍA DE IMÁGENES 👇 */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:transform .3s ease;
+}
+
+.gallery img:hover{
+  transform:scale(1.03);
+}
+
   </style>
 </head>
 <body>
