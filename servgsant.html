@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ServGSant | Hogar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServGSant | Servicios Generales</title>
 
-<style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  <style>
+    body{
+      margin:0;
+      font-family:'Segoe UI',sans-serif;
+      background:#f3f4f6;
+      color:#111827
+    }
 
-body{margin:0;font-family:'Segoe UI',sans-serif;background:#f3f4f6;color:#111827}
+    header{
+      background:linear-gradient(135deg,#064e3b,#065f46);
+      color:#fff;
+      padding:60px 20px;
+      text-align:center
+    }
 
-header{
-  background:linear-gradient(135deg,#064e3b,#065f46);
-  color:#fff;
-  padding:60px 20px;
-  text-align:center;
-}
+    h1{margin:0;font-size:2.8rem}
 
-h1{margin:0;font-size:2.8rem}
-h2{color:#065f46}
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:60px 20px
+    }
 
-section{max-width:1100px;margin:auto;padding:60px 20px}
+    .card{
+      background:#fff;
+      border-radius:20px;
+      padding:40px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08)
+    }
 
-.card{
-  background:#fff;
-  border-radius:20px;
-  padding:35px;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
+    ul{
+      line-height:1.9;
+      margin-bottom:40px
+    }
 
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:14px 25px;
-  background:#047857;
-  color:#fff;
-  text-decoration:none;
-  border-radius:12px;
-  font-weight:600;
-}
+    /* GALERÍA */
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px
+    }
 
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-  margin-top:40px;
-}
+    .galeria img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      border-radius:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.12)
+    }
 
-.gallery img{
-  width:100%;
-  display:block;
-  border-radius:16px;
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
+    .botones{
+      margin-top:40px;
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap
+    }
 
-footer{
-  text-align:center;
-  background:#064e3b;
-  color:#fff;
-  padding:25px;
-  margin-top:60px;
-}
+    .btn{
+      padding:12px 24px;
+      background:#047857;
+      color:#fff;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600
+    }
 
-@media (max-width:768px){
-  h1{font-size:2.2rem}
-  h2{font-size:1.6rem}
-  .btn{width:100%;text-align:center}
-  .card{padding:25px 20px}
-  section{padding:40px 15px}
-}
-</style>
+    footer{
+      text-align:center;
+      background:#064e3b;
+      color:#fff;
+      padding:25px;
+      margin-top:60px
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<h1>ServGSant</h1>
-<p>Servicios generales para el hogar</p>
+  <h1>ServGSant</h1>
+  <p>Servicios generales para el hogar</p>
 </header>
 
 <section>
-<div class="card">
-<h2>Servicios</h2>
-<ul>
-<li>Instalaciones</li>
-<li>Reparaciones</li>
-<li>Pintura</li>
-<li>Mantenimiento general</li>
-</ul>
+  <div class="card">
 
-<h2>Trabajos realizados</h2>
-<div class="gallery">
-<img src="https://raw.githubusercontent.com/isaaac605-ctrl/solucionessant/main/personainstalandomueble1.jpg" loading="lazy" decoding="async">
-<img src="https://raw.githubusercontent.com/isaaac605-ctrl/solucionessant/main/personareparandoenchufes.jpg" loading="lazy" decoding="async">
-</div>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Instalaciones</li>
+      <li>Reparaciones generales</li>
+      <li>Pintura</li>
+      <li>Mantenimiento general del hogar</li>
+    </ul>
 
-<a class="btn" href="mailto:solucionessant2025@gmail.com?subject=ServGSant">📧 Contactar</a>
-<a class="btn" href="index.html">⬅ Volver</a>
-</div>
+    <h2>Trabajos realizados</h2>
+
+    <!-- AQUÍ VAN TODAS TUS IMÁGENES -->
+    <div class="galeria">
+      <img src="AQUI_TU_IMAGEN_1.jpg" alt="Trabajo realizado">
+      <img src="AQUI_TU_IMAGEN_2.jpg" alt="Trabajo realizado">
+      <img src="AQUI_TU_IMAGEN_3.jpg" alt="Trabajo realizado">
+      <img src="AQUI_TU_IMAGEN_4.jpg" alt="Trabajo realizado">
+      <!-- puedes seguir agregando más sin límite -->
+    </div>
+
+    <div class="botones">
+      <a href="#" class="btn">📞 Contactar</a>
+      <a href="index.html" class="btn">⬅ Volver</a>
+    </div>
+
+  </div>
 </section>
 
-<footer>© 2025 ServGSant</footer>
+<footer>
+  <p>© 2025 ServGSant</p>
+</footer>
+
 </body>
 </html>
