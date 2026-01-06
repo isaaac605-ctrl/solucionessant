@@ -25,15 +25,8 @@ header{
   text-align:center;
 }
 
-h1{
-  margin:0;
-  font-size:3rem;
-}
-
-h2{
-  color:#a5b4fc;
-  margin-top:40px;
-}
+h1{margin:0;font-size:3rem}
+h2{color:#a5b4fc;margin-top:40px}
 
 section{
   max-width:1100px;
@@ -53,7 +46,7 @@ ul{
   margin-top:20px;
 }
 
-/* GALERÍA DE SERVICIOS */
+/* GALERÍA */
 .galeria{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -69,19 +62,19 @@ ul{
   box-shadow:0 6px 16px rgba(0,0,0,.5);
 }
 
-/* BOTONES CENTRADOS */
-.botones-centro{
+/* BLOQUE DE ACCIONES */
+.acciones{
   width:100%;
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:32px;
-  margin:60px auto 20px auto;
+  gap:24px;
+  margin:60px auto 10px;
   flex-wrap:wrap;
 }
 
-.botones-centro a{
-  padding:14px 30px;
+.acciones a{
+  padding:14px 28px;
   border-radius:12px;
   font-weight:600;
   text-decoration:none;
@@ -91,13 +84,10 @@ ul{
   gap:8px;
 }
 
-.btn-correo{
-  background:#0ea5e9;
-}
-
-.btn-volver{
-  background:#4f46e5;
-}
+/* BOTONES */
+.btn-whatsapp{background:#25D366}
+.btn-correo{background:#0ea5e9}
+.btn-volver{background:#4f46e5}
 
 footer{
   text-align:center;
@@ -148,9 +138,14 @@ footer{
       <img src="imagen-reels.jpg" alt="Reels y shorts">
     </div>
 
-    <div class="botones-centro">
+    <!-- ACCIONES -->
+    <div class="acciones">
+      <a href="https://wa.me/34612345678" target="_blank" class="btn-whatsapp">
+        💬 WhatsApp
+      </a>
+
       <a href="mailto:solucionessant2025@gmail.com?subject=CContentSant" class="btn-correo">
-        📧 Contactar
+        📧 Correo
       </a>
 
       <a href="index.html" class="btn-volver">
@@ -167,4 +162,3 @@ footer{
 
 </body>
 </html>
-
